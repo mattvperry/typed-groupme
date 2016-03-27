@@ -1,0 +1,8 @@
+{
+  "name": "groupme",
+  "main": "index.d.ts",
+  "version": "0.5.7",
+  "ambientDependencies": {
+    "node": "registry:dt/node#4.0.0+20160319033040"
+  }
+}
