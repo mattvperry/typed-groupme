@@ -4,8 +4,13 @@ declare module "groupme" {
     import { IncomingMessage } from "http";
     import { EventEmitter } from "events";
     
-    type ImageServiceCallback = (err: any, data: { url: string }) => void;
+    type ImageServiceCallback = (err: any, data: ImageServicePayload) => void;
     type ApiCallback<T> = (err: IncomingMessage, data: T) => void;
+    
+    interface ImageServicePayload {
+        url: string,
+        picture_url: string
+    }
     
     interface Attachment {
         type: string;
